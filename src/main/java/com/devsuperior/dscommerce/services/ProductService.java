@@ -40,6 +40,6 @@ public class ProductService {
 		
 		repository.save(entity);
 		
-		return dto;
+		return new ProductDTO(entity);
 	}
 }
